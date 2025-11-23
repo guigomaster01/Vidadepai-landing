@@ -71,6 +71,52 @@ function DoacoesSection() {
   )
 }
 
+function YouTubeSection() {
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-10 lg:py-14 grid lg:grid-cols-[1.3fr,1fr] gap-8 items-center">
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold text-slate-900">
+          Conheça o canal Vida de Pai 🎥
+        </h2>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          No YouTube, compartilho vídeos sobre paternidade, carreira,
+          equilíbrio emocional, tecnologia e tudo o que aprendo na jornada de
+          ser pai, marido e pessoa real tentando melhorar todos os dias.
+        </p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          Meu objetivo é ajudar outros pais e mães com conteúdos sinceros,
+          práticos e cheios de histórias reais da vida em família.
+        </p>
+
+        <a
+          href="https://www.youtube.com/@VidadePaiOficial/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-xl bg-red-600 text-white hover:bg-red-700 transition shadow"
+        >
+          Acessar canal no YouTube
+        </a>
+
+        <p className="text-xs text-slate-400">
+          Dicas, reflexões de pai, tecnologia e conteúdos motivacionais.
+        </p>
+      </div>
+
+      <div className="lg:justify-self-end">
+        <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/videoseries?list=PLnYvYYBwMkU3Nw5Tx1Kbbv76PGPwGj08i"
+            title="Vídeos do canal Vida de Pai"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 
 function App() {
   return (
@@ -105,7 +151,11 @@ function App() {
             <a href="#cta" className="hover:text-vpPrimary">
               Comece aqui
             </a>
+            <a href="#youtube" className="hover:text-vpPrimary">
+              YouTube
+            </a>
           </nav>
+
 
           </div>
           </header>
@@ -333,6 +383,12 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* YOUTUBE */}
+        <section id="youtube" className="bg-white border-t">
+          <YouTubeSection />
+        </section>
+
 
         {/* CTA FINAL */}
         <section
