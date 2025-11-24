@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vidadepai.com.br/sitemap.xml
+Disallow: /admin/
+Disallow: /privado/
+Disallow: /config/
